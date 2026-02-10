@@ -11,21 +11,21 @@ const photoPool = [
     'photo9.jpeg',
     'photo10.jpeg',
     'photo11.jpeg',
-    'photo12.jpg',
-    'photo13.jpg',
-    'photo14.jpg',
-    'photo15.jpg',
-    'photo16.jpg',
-    'photo17.jpg',
-    'photo18.jpg',
-    'photo19.jpg',
-    'photo20.jpg',
-    'photo21.jpg',
-    'photo22.jpg',
-    'photo23.jpg',
-    'photo24.jpg',
-    'photo25.jpg',
-    'photo26.jpg',
+    'photo12.jpeg',
+    'photo13.jpeg',
+    'photo14.jpeg',
+    'photo15.jpeg',
+    'photo16.jpeg',
+    'photo17.jpeg',
+    'photo18.jpeg',
+    'photo19.jpeg',
+    'photo20.jpeg',
+    'photo21.jpeg',
+    'photo22.jpeg',
+    'photo23.jpeg',
+    'photo24.jpeg',
+    'photo25.jpeg',
+    'photo26.jpeg',
     // Add more photos as needed
 ];
 
@@ -178,3 +178,4 @@ for (let i = 0; i < 15; i++) {
 
 // Add new falling petals periodically
 setInterval(createFallingPetal, 1500);
+
