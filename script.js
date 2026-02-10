@@ -178,4 +178,3 @@ for (let i = 0; i < 15; i++) {
 
 // Add new falling petals periodically
 setInterval(createFallingPetal, 1500);
-
