@@ -13,6 +13,7 @@ body {
     align-items: center;
     overflow-x: hidden;
     position: relative;
+    padding-top: 4.5rem;
 }
 
 .container {
@@ -125,45 +126,132 @@ body {
     grid-row: 3 / 4;
 }
 
-/* Music Toggle Button */
-.music-toggle {
+/* Mini Music Player */
+.music-player {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4);
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+    gap: 1rem;
     z-index: 1000;
+    box-shadow: 0 8px 32px rgba(212, 82, 110, 0.25);
+    min-width: 280px;
+    max-width: 400px;
+    transition: all 0.3s ease;
 }
 
-.music-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 12px 30px rgba(255, 20, 147, 0.6);
+.music-player:hover {
+    box-shadow: 0 12px 40px rgba(212, 82, 110, 0.35);
+    background: rgba(255, 255, 255, 0.22);
 }
 
-.music-toggle:active {
-    transform: scale(0.95);
+.music-player-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
-.music-icon {
-    font-size: 1.8rem;
-    transition: transform 0.3s ease;
-}
-
-.music-toggle.playing .music-icon {
+.music-player-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
     animation: pulse 1.5s ease-in-out infinite;
 }
 
-.music-toggle.paused .music-icon {
-    opacity: 0.6;
+.music-player.paused .music-player-icon {
+    animation: none;
+    opacity: 0.5;
+}
+
+.music-player-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #5a3a3a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-player-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-shrink: 0;
+}
+
+.player-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    color: #5a3a3a;
+}
+
+.player-btn:hover {
+    background: rgba(212, 82, 110, 0.15);
+    transform: scale(1.15);
+}
+
+.player-btn:active {
+    transform: scale(0.9);
+}
+
+.player-btn.play-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 20, 147, 0.35);
+}
+
+.player-btn.play-btn:hover {
+    box-shadow: 0 6px 18px rgba(255, 20, 147, 0.5);
+    background: linear-gradient(135deg, #ff85c8 0%, #ff3da7 100%);
+}
+
+.music-player-progress {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 3px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 58, 58, 0.1);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff69b4, #ff1493, #d4526e);
+    border-radius: 3px;
+    transition: width 0.3s linear;
 }
 
 @keyframes pulse {
@@ -179,40 +267,49 @@ body {
 }
 
 
-/* Countdown Section */
-.countdown-container {
-    grid-column: 1 / -1;
+/* Countdown Banner */
+.countdown-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
-    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(212, 82, 110, 0.15);
+    z-index: 999;
 }
 
 .countdown-label {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     color: #5a3a3a;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .time-unit {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #5a3a3a;
     font-weight: 400;
 }
 
 .number {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #d4526e;
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
 }
 
 /* Falling Petals Animation */
@@ -276,32 +373,47 @@ body {
         max-width: 100%;
     }
 
-    .countdown-container {
-        order: 3;
-        margin-top: 1rem;
+    .countdown-banner {
+        padding: 0.4rem 0.8rem;
     }
 
     .countdown {
         gap: 0.8rem;
-        font-size: 0.85rem;
     }
 
     .number {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .time-unit {
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 
     .countdown-label {
-        font-size: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .music-player {
+        min-width: 240px;
+        max-width: 90vw;
+        padding: 0.5rem 1rem;
+        gap: 0.6rem;
+        bottom: 1rem;
+    }
+
+    .music-player-title {
+        font-size: 0.7rem;
+    }
+
+    .container {
+        padding-bottom: 5rem;
     }
 }
 
 @media (max-width: 480px) {
     body {
         padding: 0.5rem;
+        padding-top: 4rem;
     }
 
     .container {
@@ -327,20 +439,37 @@ body {
     }
 
     .countdown {
-        gap: 0.5rem;
-        flex-wrap: wrap;
+        gap: 0.4rem;
     }
 
     .number {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .time-unit {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
 
     .countdown-label {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .music-player {
+        min-width: 220px;
+        padding: 0.4rem 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .player-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+
+    .player-btn.play-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
     }
 }
 

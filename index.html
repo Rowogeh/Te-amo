@@ -15,6 +15,17 @@
 </head>
 
 <body>
+    <!-- Countdown Banner -->
+    <div class="countdown-banner">
+        <p class="countdown-label">Mi amor por ti comenzó hace...</p>
+        <div class="countdown" id="countdown">
+            <span class="time-unit"><span class="number" id="days">0</span> días</span>
+            <span class="time-unit"><span class="number" id="hours">0</span> horas</span>
+            <span class="time-unit"><span class="number" id="minutes">0</span> minutos</span>
+            <span class="time-unit"><span class="number" id="seconds">0</span> segundos</span>
+        </div>
+    </div>
+
     <div class="container">
         <div class="love-message">
             <p class="message-text">
@@ -62,24 +73,25 @@
         </div>
 
         <!-- Audio Player -->
-        <audio id="backgroundMusic" loop>
-            <source src="song.mp3" type="audio/mpeg">
-            <source src="song.ogg" type="audio/ogg">
+        <audio id="backgroundMusic">
             Your browser does not support the audio element.
         </audio>
 
-        <!-- Music Control Button -->
-        <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
-            <span class="music-icon">🎵</span>
-        </button>
-
-        <div class="countdown-container">
-            <p class="countdown-label">Mi amor por ti comenzó hace...</p>
-            <div class="countdown" id="countdown">
-                <span class="time-unit"><span class="number" id="days">0</span> días</span>
-                <span class="time-unit"><span class="number" id="hours">0</span> horas</span>
-                <span class="time-unit"><span class="number" id="minutes">0</span> minutos</span>
-                <span class="time-unit"><span class="number" id="seconds">0</span> segundos</span>
+        <!-- Mini Music Player -->
+        <div class="music-player" id="musicPlayer">
+            <div class="music-player-info">
+                <span class="music-player-icon">🎵</span>
+                <span class="music-player-title" id="songTitle">Cargando...</span>
+            </div>
+            <div class="music-player-controls">
+                <button class="player-btn" id="prevBtn" aria-label="Canción anterior">⏮</button>
+                <button class="player-btn play-btn" id="playBtn" aria-label="Reproducir/Pausar">▶</button>
+                <button class="player-btn" id="nextBtn" aria-label="Siguiente canción">⏭</button>
+            </div>
+            <div class="music-player-progress">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
             </div>
         </div>
 

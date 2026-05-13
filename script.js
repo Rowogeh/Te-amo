@@ -1,105 +1,105 @@
 // Photo Pool - Add all your photo filenames here
 const photoPool = [
-    'photo1.jpeg',
-    'photo2.jpeg',
-    'photo3.jpeg',
-    'photo4.jpeg',
-    'photo5.jpeg',
-    'photo6.jpeg',
-    'photo7.jpeg',
-    'photo8.jpeg',
-    'photo9.jpeg',
-    'photo10.jpeg',
-    'photo11.jpeg',
-    'photo12.jpeg',
-    'photo13.jpeg',
-    'photo14.jpeg',
-    'photo15.jpeg',
-    'photo16.jpeg',
-    'photo17.jpeg',
-    'photo18.jpeg',
-    'photo19.jpeg',
-    'photo20.jpeg',
-    'photo21.jpeg',
-    'photo22.jpeg',
-    'photo23.jpeg',
-    'photo24.jpeg',
-    'photo25.jpeg',
-    'photo26.jpeg',
-    'photo27.jpeg',
-    'photo28.jpeg',
-    'photo29.jpeg',
-    'photo30.jpeg',
-    'photo31.jpeg',
-    'photo32.jpeg',
-    'photo33.jpeg',
-    'photo34.jpeg',
-    'photo35.jpeg',
-    'photo36.jpeg',
-    'photo37.jpeg',
-    'photo38.jpeg',
-    'photo39.jpeg',
-    'photo40.jpeg',
-    'photo41.jpeg',
-    'photo42.jpeg',
-    'photo43.jpeg',
-    'photo44.jpeg',
-    'photo45.jpeg',
-    'photo46.jpeg',
-    'photo47.jpeg',
-    'photo48.jpeg',
-    'photo49.jpeg',
-    'photo50.jpeg',
-    'photo51.jpeg',
-    'photo52.jpeg',
-    'photo53.jpeg',
-    'photo54.jpeg',
-    'photo55.jpeg',
-    'photo56.jpeg',
-    'photo57.jpeg',
-    'photo58.jpeg',
-    'photo59.jpeg',
-    /*'photo60.jpeg',
-    'photo61.jpeg',
-    'photo62.jpeg',
-    'photo63.jpeg',
-    'photo64.jpeg',
-    'photo65.jpeg',
-    'photo66.jpeg',
-    'photo67.jpeg',
-    'photo68.jpeg',
-    'photo69.jpeg',
-    'photo70.jpeg',
-    'photo71.jpeg',
-    'photo72.jpeg',
-    'photo73.jpeg',
-    'photo74.jpeg',
-    'photo75.jpeg',
-    'photo76.jpeg',
-    'photo77.jpeg',
-    'photo78.jpeg',
-    'photo79.jpeg',
-    'photo80.jpeg',
-    'photo81.jpeg',
-    'photo82.jpeg',
-    'photo83.jpeg',
-    'photo84.jpeg',
-    'photo85.jpeg',
-    'photo86.jpeg',
-    'photo87.jpeg',
-    'photo88.jpeg',
-    'photo89.jpeg',
-    'photo90.jpeg',
-    'photo91.jpeg',
-    'photo92.jpeg',
-    'photo93.jpeg',
-    'photo94.jpeg',
-    'photo95.jpeg',
-    'photo96.jpeg',
-    'photo97.jpeg',
-    'photo98.jpeg',
-    'photo99.jpeg',
-    'photo100.jpeg',*/
+    'photos/photo1.jpeg',
+    'photos/photo2.jpeg',
+    'photos/photo3.jpeg',
+    'photos/photo4.jpeg',
+    'photos/photo5.jpeg',
+    'photos/photo6.jpeg',
+    'photos/photo7.jpeg',
+    'photos/photo8.jpeg',
+    'photos/photo9.jpeg',
+    'photos/photo10.jpeg',
+    'photos/photo11.jpeg',
+    'photos/photo12.jpeg',
+    'photos/photo13.jpeg',
+    'photos/photo14.jpeg',
+    'photos/photo15.jpeg',
+    'photos/photo16.jpeg',
+    'photos/photo17.jpeg',
+    'photos/photo18.jpeg',
+    'photos/photo19.jpeg',
+    'photos/photo20.jpeg',
+    'photos/photo21.jpeg',
+    'photos/photo22.jpeg',
+    'photos/photo23.jpeg',
+    'photos/photo24.jpeg',
+    'photos/photo25.jpeg',
+    'photos/photo26.jpeg',
+    'photos/photo27.jpeg',
+    'photos/photo28.jpeg',
+    'photos/photo29.jpeg',
+    'photos/photo30.jpeg',
+    'photos/photo31.jpeg',
+    'photos/photo32.jpeg',
+    'photos/photo33.jpeg',
+    'photos/photo34.jpeg',
+    'photos/photo35.jpeg',
+    'photos/photo36.jpeg',
+    'photos/photo37.jpeg',
+    'photos/photo38.jpeg',
+    'photos/photo39.jpeg',
+    'photos/photo40.jpeg',
+    'photos/photo41.jpeg',
+    'photos/photo42.jpeg',
+    'photos/photo43.jpeg',
+    'photos/photo44.jpeg',
+    'photos/photo45.jpeg',
+    'photos/photo46.jpeg',
+    'photos/photo47.jpeg',
+    'photos/photo48.jpeg',
+    'photos/photo49.jpeg',
+    'photos/photo50.jpeg',
+    'photos/photo51.jpeg',
+    'photos/photo52.jpeg',
+    'photos/photo53.jpeg',
+    'photos/photo54.jpeg',
+    'photos/photo55.jpeg',
+    'photos/photo56.jpeg',
+    'photos/photo57.jpeg',
+    'photos/photo58.jpeg',
+    'photos/photo59.jpeg',
+    /*'photos/photo60.jpeg',
+    'photos/photo61.jpeg',
+    'photos/photo62.jpeg',
+    'photos/photo63.jpeg',
+    'photos/photo64.jpeg',
+    'photos/photo65.jpeg',
+    'photos/photo66.jpeg',
+    'photos/photo67.jpeg',
+    'photos/photo68.jpeg',
+    'photos/photo69.jpeg',
+    'photos/photo70.jpeg',
+    'photos/photo71.jpeg',
+    'photos/photo72.jpeg',
+    'photos/photo73.jpeg',
+    'photos/photo74.jpeg',
+    'photos/photo75.jpeg',
+    'photos/photo76.jpeg',
+    'photos/photo77.jpeg',
+    'photos/photo78.jpeg',
+    'photos/photo79.jpeg',
+    'photos/photo80.jpeg',
+    'photos/photo81.jpeg',
+    'photos/photo82.jpeg',
+    'photos/photo83.jpeg',
+    'photos/photo84.jpeg',
+    'photos/photo85.jpeg',
+    'photos/photo86.jpeg',
+    'photos/photo87.jpeg',
+    'photos/photo88.jpeg',
+    'photos/photo89.jpeg',
+    'photos/photo90.jpeg',
+    'photos/photo91.jpeg',
+    'photos/photo92.jpeg',
+    'photos/photo93.jpeg',
+    'photos/photo94.jpeg',
+    'photos/photo95.jpeg',
+    'photos/photo96.jpeg',
+    'photos/photo97.jpeg',
+    'photos/photo98.jpeg',
+    'photos/photo99.jpeg',
+    'photos/photo100.jpeg',*/
     // Add more photos as needed
 ];
 
@@ -125,49 +125,124 @@ function loadRandomPhotos() {
 // Load photos when page loads
 window.addEventListener('DOMContentLoaded', loadRandomPhotos);
 
-// Background Music
+// Song Pool - Add all your song filenames here
+const songPool = [
+    'music/Qué Gusto Conocerte.mp3',
+    'music/song2.mp3',
+    // Add more songs here, for example:
+    // 'music/song2.mp3',
+    // 'music/song3.mp3',
+];
+
+// Music Player
 const backgroundMusic = document.getElementById('backgroundMusic');
-const musicToggle = document.getElementById('musicToggle');
+const musicPlayer = document.getElementById('musicPlayer');
+const playBtn = document.getElementById('playBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const songTitle = document.getElementById('songTitle');
+const progressFill = document.getElementById('progressFill');
+const progressBar = document.getElementById('progressBar');
+
 let isPlaying = false;
+let currentSongIndex = 0;
 
-// Try to autoplay music (may be blocked by browser)
-function tryAutoplay() {
-    const playPromise = backgroundMusic.play();
+// Get a display name from the filename
+function getSongDisplayName(path) {
+    const filename = path.split('/').pop();              // "song.mp3"
+    const name = filename.replace(/\.[^.]+$/, '');       // "song"
+    return name.replace(/[-_]/g, ' ')                    // clean up
+        .replace(/\b\w/g, c => c.toUpperCase());  // capitalize
+}
 
-    if (playPromise !== undefined) {
-        playPromise
-            .then(() => {
-                // Autoplay started successfully
-                isPlaying = true;
-                musicToggle.classList.add('playing');
-                musicToggle.classList.remove('paused');
-            })
-            .catch(() => {
-                // Autoplay was blocked - user will need to click the button
-                isPlaying = false;
-                musicToggle.classList.add('paused');
-                musicToggle.classList.remove('playing');
-            });
+// Load a song by index
+function loadSong(index) {
+    if (songPool.length === 0) return;
+    currentSongIndex = ((index % songPool.length) + songPool.length) % songPool.length;
+    backgroundMusic.src = songPool[currentSongIndex];
+    songTitle.textContent = getSongDisplayName(songPool[currentSongIndex]);
+    progressFill.style.width = '0%';
+}
+
+// Play / Pause
+function togglePlay() {
+    if (isPlaying) {
+        backgroundMusic.pause();
+    } else {
+        backgroundMusic.play();
     }
 }
 
-// Toggle music on button click
-musicToggle.addEventListener('click', () => {
-    if (isPlaying) {
-        backgroundMusic.pause();
-        isPlaying = false;
-        musicToggle.classList.add('paused');
-        musicToggle.classList.remove('playing');
+function setPlayingState(playing) {
+    isPlaying = playing;
+    playBtn.textContent = playing ? '⏸' : '▶';
+    if (playing) {
+        musicPlayer.classList.remove('paused');
     } else {
-        backgroundMusic.play();
-        isPlaying = true;
-        musicToggle.classList.add('playing');
-        musicToggle.classList.remove('paused');
+        musicPlayer.classList.add('paused');
+    }
+}
+
+// Next / Previous
+function nextSong() {
+    const wasPlaying = isPlaying;
+    loadSong(currentSongIndex + 1);
+    if (wasPlaying) backgroundMusic.play();
+}
+
+function prevSong() {
+    // If more than 3 seconds in, restart current song; otherwise go to previous
+    if (backgroundMusic.currentTime > 3) {
+        backgroundMusic.currentTime = 0;
+    } else {
+        const wasPlaying = isPlaying;
+        loadSong(currentSongIndex - 1);
+        if (wasPlaying) backgroundMusic.play();
+    }
+}
+
+// Update progress bar
+function updateProgress() {
+    if (backgroundMusic.duration) {
+        const percent = (backgroundMusic.currentTime / backgroundMusic.duration) * 100;
+        progressFill.style.width = percent + '%';
+    }
+}
+
+// Seek on progress bar click
+progressBar.addEventListener('click', (e) => {
+    if (backgroundMusic.duration) {
+        const rect = progressBar.getBoundingClientRect();
+        const percent = (e.clientX - rect.left) / rect.width;
+        backgroundMusic.currentTime = percent * backgroundMusic.duration;
     }
 });
 
-// Try to autoplay when page loads
-window.addEventListener('DOMContentLoaded', tryAutoplay);
+// Event listeners
+playBtn.addEventListener('click', togglePlay);
+nextBtn.addEventListener('click', nextSong);
+prevBtn.addEventListener('click', prevSong);
+
+backgroundMusic.addEventListener('play', () => setPlayingState(true));
+backgroundMusic.addEventListener('pause', () => setPlayingState(false));
+backgroundMusic.addEventListener('timeupdate', updateProgress);
+backgroundMusic.addEventListener('ended', nextSong);
+
+// Initialize: load first song and try to autoplay
+function initPlayer() {
+    const randomIndex = Math.floor(Math.random() * songPool.length);
+    loadSong(randomIndex);
+    musicPlayer.classList.add('paused');
+
+    const playPromise = backgroundMusic.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            // Autoplay blocked — user will click play
+        });
+    }
+}
+
+window.addEventListener('DOMContentLoaded', initPlayer);
 
 
 // Countdown Timer
