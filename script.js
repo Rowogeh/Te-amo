@@ -141,6 +141,7 @@ const songPool = [
     'music/Una tarde juntos.mp3',
     'music/Volare.mp3',
     'music/Yellow.mp3',
+    'music/Caiste Del Cielo.mp3',
     // Add more songs here, for example:
     // 'music/song2.mp3',
     // 'music/song3.mp3',
