@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ffd1dc 100%);
+    background: linear-gradient(135deg, #7bdff2 0%, #b2f7ef 25%, #eff7f6 50%, #f7d6e0 75%, #f2b5d4 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;

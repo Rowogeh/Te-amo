@@ -128,7 +128,19 @@ window.addEventListener('DOMContentLoaded', loadRandomPhotos);
 // Song Pool - Add all your song filenames here
 const songPool = [
     'music/Qué Gusto Conocerte.mp3',
-    'music/song2.mp3',
+    'music/(They Long To Be) Close To You.mp3',
+    'music/Amarte A La Antigua (Album Version).mp3',
+    'music/Bolero Estelar.mp3',
+    'music/Casi algo.mp3',
+    'music/Cita con un Psicólogo.mp3',
+    'music/La Casa de Nuestros Sueños.mp3',
+    'music/La Mejor Versión.mp3',
+    'music/Nunca digas Nunca.mp3',
+    'music/Silver Lining.mp3',
+    'music/The Only Exception.mp3',
+    'music/Una tarde juntos.mp3',
+    'music/Volare.mp3',
+    'music/Yellow.mp3',
     // Add more songs here, for example:
     // 'music/song2.mp3',
     // 'music/song3.mp3',
@@ -269,20 +281,21 @@ setInterval(updateCountdown, 1000);
 
 // Color palette for falling petals
 const colors = [
-    '#ff1493', // Deep pink
-    '#ff69b4', // Hot pink
-    '#ffc0cb', // Pink
-    '#ff6b9d', // Medium pink
-    '#ffb6c1', // Light pink
-    '#ff1744', // Red pink
-    '#f50057', // Pink red
-    '#ff4081', // Pink accent
-    '#ffd700', // Gold
-    '#ffb347', // Orange
-    '#ff6347', // Tomato
-    '#ff8c00', // Dark orange
-    '#ffa500', // Orange
-    '#ffff00', // Yellow
+    '#E8B2C3', // soft blossom2
+    '#ffc4d6', // Soft Blossom
+    '#F8BFE1', // Blush pop
+    '#F1BAEB', // Pink Orchid
+    '#E2AFFF', // Mauve
+    '#CB9CF5', // Mauve 2
+    '#B388EB', // Bright Lavender
+    '#AB9EEC', // Soft
+    '#A2B4ED', // Baby blue Ice
+    '#9CD1EF', // Baby Blue
+    '#90E0EF', // frosted blue
+    '#8CE8EA', // Electric Aqua
+    '#88F0E5', // Soft Cyan
+    '#84F8E0', // Aquamarine
+    '#80FFDB', // Aquamarine2 
     '#ffeb3b', // Bright yellow
     '#ffd54f'  // Light yellow
 ];
