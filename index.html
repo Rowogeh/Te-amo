@@ -25,28 +25,35 @@
             <span class="time-unit"><span class="number" id="seconds">0</span> segundos</span>
         </div>
     </div>
-
     <div class="container">
-        <div class="love-message">
-            <p class="message-text">
-                Para mi niña linda:<br><br>
-                Si me preguntaran ¿Cuál es mi lugar seguro?<br>
-                Yo estoy totalmente convencido que sería a tu lado.<br>
-                ¿Quién lo diría?<br>
-                En tan poco tiempo, pasamos de ser completos desconocidos<br>
-                a querer pasar una vida entera juntos,<br>
-                y no es para menos, porque cada día que pasa me enamoro más de ti.<br>
-                ¿Será cosa del destino?<br>
-                Tal vez en este momento no tengo respuesta a eso, pero <br>
-                si pudiera asegurarte algo es que definitivamente iría contigo hasta el fin del mundo.<br>
-                Quiero verte crecer, que cumplas tus sueños,<br>
-                que sanes de todas esas cosas que no me has contado y te siguen haciendo daño, <br>
-                por sobre todo, quiero que seas feliz, que sonrías siempre.<br><br>
-                Por mi parte, prometo estar a tu lado en cada paso que des, por pequeño que sea,<br>
-                sabes que te apoyo hoy, mañana y siempre. Mientras tu así me lo permitas, estaré siempre para
-                ti.<br><br>
-                <span class="signature">— Te amo mucho mi niña linda.</span>
-            </p>
+        <!-- Letters / Flip Card Section -->
+        <div class="letters-section">
+            <h2 class="love-notes-title">
+                <span class="love-notes-title-icon">💌</span>
+                Escritos por nosotros
+            </h2>
+            <div class="cards-carousel letters-carousel">
+                <button class="cards-nav-btn" id="prevCard" aria-label="Carta anterior">❮</button>
+
+                <div class="flip-card-stage letters-stage">
+                    <div class="flip-card" id="flipCard">
+                        <div class="flip-card-front">
+                            <div class="card-front-deco">💌</div>
+                            <p class="card-front-title" id="cardFrontTitle">Carta 1</p>
+                            <p class="card-front-hint">Toca para leer</p>
+                            <div class="card-number-badge" id="cardNumber">1</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card-scroll-inner">
+                                <p class="card-message" id="cardMessage"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cards-nav-btn" id="nextCard" aria-label="Siguiente carta">❯</button>
+            </div>
+            <div class="card-dots" id="cardDots"></div>
         </div>
 
         <div class="photo-collage">

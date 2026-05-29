@@ -341,3 +341,179 @@ for (let i = 0; i < 15; i++) {
 
 // Add new falling petals periodically
 setInterval(createFallingPetal, 1500);
+
+// =============================================
+//  Love Notes — ✏️ Edit your letters here!
+//  Each entry is an object with:
+//    title: shown on the front of the card
+//    text:  the full letter content (can be very long)
+//  Use \n for line breaks inside the text.
+// =============================================
+const loveNotes = [
+    {
+        title: 'Recuerdos',
+        text: `Para mi niña linda:
+
+Si me preguntaran ¿Cuál es mi lugar seguro?
+Yo estoy totalmente convencido que sería a tu lado.
+¿Quién lo diría?
+En tan poco tiempo, pasamos de ser completos desconocidos a querer pasar una vida entera juntos, y no es para menos, porque cada día que pasa me enamoro más de ti.
+¿Será cosa del destino?
+Tal vez en este momento no tengo respuesta a eso, pero si pudiera asegurarte algo es que definitivamente iría contigo hasta el fin del mundo.
+Quiero verte crecer, que cumplas tus sueños, que sanes de todas esas cosas que no me has contado y te siguen haciendo daño, por sobre todo, quiero que seas feliz, que sonrías siempre.
+
+Por mi parte, prometo estar a tu lado en cada paso que des, por pequeño que sea, sabes que te apoyo hoy, mañana y siempre. Mientras tu así me lo permitas, estaré siempre para ti.
+
+— Te amo mucho mi niña linda.`
+    },
+
+    {
+        title: 'Noches',
+        text: `En algún momento he querido sonreír de verdad...
+       Pero siempre quedo a medias... Luché por amor pero el remo a pleno mar se quebró...
+    Entre las penumbras había un mar sin dirección... ¿Has estado alguna vez sin rumbo sin remo?
+    La noche oscura envuelve y salen mis demonios internos, me pregunto de verdad si acá es donde pertenezco... 
+    Me he quedado sola y aprendí a sobrevivir... Sin rumbo aparente flotando en el mar dejándome llevar del destino y sus hazañas...
+    Pero como todo tiene inicio y en tus manos un final en esa noche oscura ví la luna preguntar si de casualidad junto a mi, ¿existía un lugar? 
+    Entre la noche espesa sin rumbo ni dirección, esa hermosa luna a mi vida entró con su brillo
+    Mi vida alumbró y entre penumbras todo tomó color, sonreí unas cuantas noches para demostrarme su amor y plenamente bella me alumbra sin temor porque aprendí que el amor llega cuando más oscuro estoy sin poder negarlo me salvó
+
+        Porque tú llegaste a mi vida cuando menos lo esperaba, cuando todo era negro, cuando no había esperanzas y llegaste como la luna despacio y sin prisas tomando una sonrisa para poco a poco alumbrar mis días y por ende si yo soy el sol que alumbró tu alma tu eres la luna que le dió sentido a mi vida y como nosotros nos somos planetas para viajar años en encontrarnos seamos nuestro eclipse que dure 100 años`
+    },
+
+    {
+        title: 'Deseos',
+        text: `Yo hace mucho deje de pedir y dejé de soñar...
+        
+    Me preguntaba que se sentiría tener una persona que te ame de la misma manera en la que tú puedes amar.
+    
+    Qué graciosa es la vida, cuando menos lo esperas, te topa de frente con respuestas a preguntas que tú ni tan siquiera sabías que te hacías.
+    
+    Son dos meses es muy cierto. Pero en este momento solo pido que si fallo me tengas paciencia, que si caigo me ayudes a levantar y que si me tiro a rendir me empujes,
+    que me ames como lo haces porque no hay nada que yo no quiera más que conocerte y amarte completamente`
+    },
+
+    {
+        title: 'El amor dura 3 meses',
+        text: `¿Que pasaría si hoy te dijera que soy totalmente afortunada?
+        
+    Por tener la maravillosa dicha de haberme topado en tu vida...
+    
+    Cuando muchas cosas en la vida se ponen en contra... 
+    
+    Cuando sientes que luchas por encajar... 
+    
+    Cuando ves que todos los demás van en una etapa en dónde tú aún no has logrado llegar.... 
+    
+    ¿Que pasaría si te digo que a veces me río del karma? si es que existe .... 
+    
+    Que me río de la vida, de mis acciones, de mis decisiones, que me tiro al vacío sabiendo que en algún momento he de tocar el fondo, he de caer, he de quebrarme...
+    
+    ¿Cuántas noches maldije al universo por el destino que me ha tocado tener? 
+    
+    ¿Cuántas noches he llorado preguntándome el por qué?
+    
+    Y soy afortunada porque creo que al fin Dios en algún punto de la vida diría: si, te he puesto cada una de las piedras en el camino, en donde en cada una has tropezado has caído y has aprendido a ser mejor y más mujer, más humilde, más sensible, más humana, más la versión de mujer que tu eres capaz de ser
+    y me golpeé con la realidad de todo lo que había querido tener desde que tengo uso de razón en mi vida, porque siempre he descrito al amor de mi vida que sea alto blanco de ojos claros y de cabello castaño o café, que sea tierno, que sea amoroso, que sea cuidadoso, que sea una versión diferente de lo que la sociedad dicta ser, un hombre que sea totalmente diferente a lo que mi papá es... 
+    
+    Y ví tu mirada y entendí porque hay cientos de constelaciones, entendí porque aún siguen buscando vida fuera de este planeta, comprendí porque los números no tienen final pero si un principio y me di cuenta que me puedo estar muriendo con un ataque de lo que sea y pensar que puedo incluso faltarte hoy y saber,
+    
+    que me enamore de ti y que soy sumamente feliz a tu lado`
+    },
+    // ✏️ Agrega más cartas aquí — copia el bloque de arriba y escribe tu mensaje
+    // {
+    //     title: 'Mi segunda carta',
+    //     text: `Escribe tu carta aquí...
+    //
+    // Puede ser tan larga como quieras.`
+    // },
+];
+
+// =============================================
+//  Flip Card Logic
+// =============================================
+let currentCardIndex = 0;
+let isFlipped = false;
+let isAnimating = false;
+
+const flipCard = document.getElementById('flipCard');
+const cardMessage = document.getElementById('cardMessage');
+const cardNumber = document.getElementById('cardNumber');
+const cardFrontTitle = document.getElementById('cardFrontTitle');
+const cardDots = document.getElementById('cardDots');
+const prevCardBtn = document.getElementById('prevCard');
+const nextCardBtn = document.getElementById('nextCard');
+
+// Build dot indicators
+function buildDots() {
+    cardDots.innerHTML = '';
+    loveNotes.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'card-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goToCard(i));
+        cardDots.appendChild(dot);
+    });
+}
+
+function updateDots() {
+    document.querySelectorAll('.card-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentCardIndex);
+    });
+}
+
+function applyCardContent(index) {
+    const note = loveNotes[index];
+    cardMessage.textContent = note.text;
+    cardFrontTitle.textContent = note.title || `Carta ${index + 1}`;
+    cardNumber.textContent = index + 1;
+    // Reset scroll to top
+    const inner = document.querySelector('.card-scroll-inner');
+    if (inner) inner.scrollTop = 0;
+    updateDots();
+}
+
+// Show a card at a given index
+function goToCard(index) {
+    if (isAnimating) return;
+    currentCardIndex = ((index % loveNotes.length) + loveNotes.length) % loveNotes.length;
+
+    // If currently flipped, flip back first, then swap content
+    if (isFlipped) {
+        isAnimating = true;
+        flipCard.classList.remove('flipped');
+        isFlipped = false;
+        setTimeout(() => {
+            applyCardContent(currentCardIndex);
+            isAnimating = false;
+        }, 350);
+    } else {
+        applyCardContent(currentCardIndex);
+    }
+}
+
+// Toggle flip on card click
+flipCard.addEventListener('click', () => {
+    if (isAnimating) return;
+    isFlipped = !isFlipped;
+    flipCard.classList.toggle('flipped', isFlipped);
+});
+
+// Nav buttons
+prevCardBtn.addEventListener('click', () => goToCard(currentCardIndex - 1));
+nextCardBtn.addEventListener('click', () => goToCard(currentCardIndex + 1));
+
+// Swipe support for mobile
+let touchStartX = 0;
+flipCard.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+flipCard.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) {
+        goToCard(dx < 0 ? currentCardIndex + 1 : currentCardIndex - 1);
+    }
+}, { passive: true });
+
+// Initialize on load
+window.addEventListener('DOMContentLoaded', () => {
+    buildDots();
+    applyCardContent(0);
+});
