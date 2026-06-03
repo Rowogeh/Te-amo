@@ -418,8 +418,69 @@ Por mi parte, prometo estar a tu lado en cada paso que des, por pequeño que sea
     
     Y ví tu mirada y entendí porque hay cientos de constelaciones, entendí porque aún siguen buscando vida fuera de este planeta, comprendí porque los números no tienen final pero si un principio y me di cuenta que me puedo estar muriendo con un ataque de lo que sea y pensar que puedo incluso faltarte hoy y saber,
     
-    que me enamore de ti y que soy sumamente feliz a tu lado`
+    que me enamore de ti y que soy sumamente feliz a tu lado
+    
+    Hoy vemos que el amor no solo dura 90 días o 3 meses con 26 minutos.
+    
+    Porque yo te amo porque si...
+    
+    Un pasaje bíblico dice que el corazón es traicionero y desesperado, que te hace tomar malas decisiones cuando confías en él, porque él te da lo que quieres más no lo que necesitas, por ende prefiero amarte desde mi estupidez porque cada día aprendo a como amarte y cada día aprendo que la vida me tenía algo bueno y otra razón más por la cual luchar esforzarme y vivir 🥹`
     },
+
+    {
+        title: 'Verne',
+        text: `Definitivamente el amor no dura solo 3 meses, hay una cantidad de emociones, situaciones y sentimientos que considero imposibles de encapsular en un tiempo tan corto como 90 días.
+        
+        Julio Verne escribió una de las historias más fantásticas donde los protagonistas fueron capaces de cruzar el mundo en 80 días, cruzaron fronteras, culturas y países variopintos pero no se dieron el tiempo de ahondar en cada uno de esos lugares porque estaban en una carrera contra el tiempo.
+        
+        A diferencia de los protagonistas de Verne, yo no estoy en una carrera contra nadie, y tengo un solo mundo en el que definitivamente pasaría todos mis días explorando y conociendo a fondo, un mundo que me encanta y cada minuto que pasa siento que me encanta muchísimo más, quiero aprender todo, sus costumbres, qué le gusta, qué le disgusta, qué le hace sentir pesar y que le hace ser feliz, quiero ser feliz con ese mundo, definitivamente ya llevo muchos más días que Fogg y Passepartout cruzando el mundo del que hablo, pero definitivamente mi mundo es muchísimo más inmenso que el de ellos. 
+
+        Te amo ojitos lindos ♥`
+    },
+
+    {
+        title: 'Felicidad',
+        text: `Mi amor...
+        
+        Usted sabe que yo agradezco todos los días esa primera cita, ese corrientazo que sentí cuando tomaste mi mano y ahora, nunca la quieres soltar.
+        
+        Yo te amo, los meses pasarán rápido y los años igual pero, sé que se va a congelar el momento donde te dije "te amo" por primera vez, en dónde tú tomaste mi cara y me correspondíste.
+        
+        Puede que el tiempo pase y nuestro amor siempre permanezca intacto.
+        
+        Por más meses juntos llenos de sueños y metas que cumplir 😍😘`
+    },
+
+    {
+        title: 'No tienes idea',
+        text: `Felices 3 meses amor...
+        
+        Poco se habla de lo curioso que es el tiempo, hemos vivido tantísimas cosas desde que decidimos comenzar todo, que parece que he estado toda una vida a tu lado
+        
+        Y no tienes idea de lo mucho que me encanta
+        
+        No tienes idea de lo mucho que me encanta la idea de lo sempiterno si es a tu lado
+        Te amo, sin juzgar, sin cuestionar, te amo porque esos ojos tuyos tan únicos como tú lograron fijarse en alguien tan común como yo
+        
+        Habré de tener suerte, porque una chica como tú, tan hermosa, tan fuerte y dedicada pudo fijarse en un chico, que simplemente no tenía un camino trazado
+        
+        Ciertamente ese es un enigma para mí, del cual no tengo razón de saber
+        
+        Pero ciertamente, puedo jurar que quiero procurar la felicidad, la paz y el cariño a la niña hermosa que me tiene planificando una vida entera a su lado cuando yo no tenía ni idea ni quería vivir la mía eventualmente
+        
+        Te amo niña hermosa
+        
+        Te amo muchísimo
+        
+        90 días no son absolutamente nada, mis planes son estar contigo toda la vida
+        
+        Si así me lo permites...
+        
+        Qué ganas de besarte, abrazarte y poder estar a tu lado
+        
+        Dormir a tu lado, sabiendo que hoy te amo más que ayer pero no más que lo que te amaré mañana al despertar`
+    },
+
     // ✏️ Agrega más cartas aquí — copia el bloque de arriba y escribe tu mensaje
     // {
     //     title: 'Mi segunda carta',
